@@ -1,0 +1,2 @@
+1. The bug is that we weren't parsing the elements that were entered into the input box as numbers, but rather strings. So when we type in say '1' for num1 and '2' for num2, it would print out '12' which is not the expected output.
+2. The fix was basically to use the `parseInt` function to make javascript convert the strings the user entered to be of type number so that the addition is correct.
